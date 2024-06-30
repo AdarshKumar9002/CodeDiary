@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header{
+    display: grid;
+    grid-template-areas: "menu logo .";
+    grid-template-columns: 50px auto 50px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 6dvh;
+    z-index: 99;
+}
+h1 {
+    grid-area: logo;
+    text-align: center;
+}
+#menu-button{
+    grid-area: menu;
+}
+.navContainer {
+    position: absolute;
+    width: 100%;
+    height: 16rem;
+    transform: translateY(-100%);
+}
+.navContainer[data-visible = 'true'] {
+    transform: translateY(45%);
+}
+.first-look {
+    height: 100dvh;
+    background: #dedede;
+    overflow: hidden;
+}
+.first-look__intro{
+    position: absolute;
+    top: 13%;
+    text-align: center;
+    padding: 0 1em;
+}
+.first-look__intro img{
+    width: 270px;
+    height: 250px;
+}
+.bannerImage{
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+}
+.bannerImage img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.bannerImage__seprater {
+    position: relative;
+}
+.wave-svg {
+    position: absolute;
+    bottom: 0;
+}
+.heroText {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
+.heroText button{
+ margin-top: 1em;
+}
+.heroText {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+.features {
+    overflow: hidden;
+    text-align: center;
+    padding: 0.5em 2em;
+}
+.features > div {
+  margin: 1em 0;
+}
+.features > div img {
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.playground {
+    margin: 1em 0;
+    text-align: center;
+}
+footer ul li{
+    margin-right: 0.5em;
+}

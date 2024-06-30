@@ -1,0 +1,130 @@
+/* CSS Variables */
+:root {
+    --font-size-xs:0.5rem;
+    --font-size-s:1rem;
+    --font-size-m:1.5rem;
+    --font-size-l:2rem;
+    --font-size-xl:2.5rem;
+}
+
+body{
+    background-color: #f3f4f5;
+}
+
+/* Global styling for common HTML elements */
+a{
+    text-decoration: none;
+}
+button {
+    border: none;
+    background: transparent;
+}
+
+
+
+/* Reusable classes */
+.primary-btn {
+    border: 2px solid black;
+    background: #194F68;
+    padding: 0.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: #000 2px 2px 2px 2px;
+    color: #fff;
+}
+.primary-btn:hover {
+    box-shadow: none;
+}
+
+/* Logo */
+h1 {
+    font-size: var(--font-size-m);
+}
+h1 a{
+    color: #EC8D59;
+}
+h1 span {
+    color: black;
+}
+
+
+/* Navigation */
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+/* Search Bar */
+.navContainer__searchContainer{
+    display: flex;
+    align-items: center;
+}
+.navContainer__searchContainer input {
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    padding: 0.3em 1em;
+}
+.navContainer__searchContainer button {
+    background: white;
+    border-radius: 0px 10px 10px 0;
+    width: 46px;
+    margin-left: -4px;
+    padding: 0.3em;
+}
+
+/* Main navigation */
+.navContainer__mainNav ul{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5em;
+}
+.navContainer__mainNav li a{ 
+   font-size: 1.3rem;
+   color: black;
+}
+
+/* User Login Navigation */
+.navContainer__userNav {
+    width: 100%;
+ }
+.navContainer__userNav ul{
+    display: flex;
+    justify-content: center;
+   
+ }
+.navContainer__userNav li{
+    margin-right: 1em;
+ }
+.navContainer__userNav button{
+    font-size: 0.8rem;
+ }
+
+
+ /* For the first look of the page */
+.first-look__intro button{
+    margin-top: 1em;
+}
+
+/* Features section */
+main > section  {
+    box-shadow: #d1d6da 2px 2px 2px 2px;
+    margin-bottom: 0.5em;
+}
+
+/* Direct div inside the Features section */
+ .features > div {
+    box-shadow: #d1d6da 2px 2px 2px 2px;
+    padding: 1em;
+}
+.playground {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

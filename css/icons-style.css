@@ -1,0 +1,31 @@
+:root {
+  --icon-colors-primary: #fff;
+  --icon-colors-secondry: #000;
+  --code-icon-color:#304ffd;
+}
+.dark-mode {
+  --icon-colors-primary: #000;
+  --icon-colors-secondry: #fff;
+}
+.svg-common-properties {
+  fill: var(--icon-colors-secondry);
+  width: 25px;
+}
+header [data-visible="true"] .menuAndTheme-icons {
+  fill: var(--icon-colors-secondry);
+}
+.searchIcon-svg{
+  width: 12px;
+}
+.icons-onNav {
+  fill: var(--icon-colors-secondry);
+}
+.socialMedia-icons {
+  fill: var(--icon-colors-secondry);
+}
+#code-icon {
+  fill: var(--code-icon-color);
+}
+footer .svg-common-properties {
+  fill: var(--icon-colors-primary);
+}
