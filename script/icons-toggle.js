@@ -1,10 +1,10 @@
-import { iconsSvg } from "./icons.js";
+import { iconsSvg } from './icons.js';
 
-const MENU_OPEN_ICONS = document.getElementsByClassName("menu-icon-open");
-const MENU_CLOSE_ICONS = document.getElementsByClassName("menu-icon-close");
-const DARK_MODE_ICONS = document.getElementsByClassName("dark-mode-icon");
-const LIGHT_MODE_ICONS = document.getElementsByClassName("light-mode-icons");
-const SEARCH_ICONs = document.getElementsByClassName("searchButton");
+const MENU_OPEN_ICONS = document.getElementsByClassName('menu-icon-open');
+const MENU_CLOSE_ICONS = document.getElementsByClassName('menu-icon-close');
+const DARK_MODE_ICONS = document.getElementsByClassName('dark-mode-icon');
+const LIGHT_MODE_ICONS = document.getElementsByClassName('light-mode-icons');
+const SEARCH_ICONs = document.getElementsByClassName('searchButton');
 
 // const GITHUB_ICONS = document.getElementsByClassName('github');
 // const LINKEDIN_ICONS = document.getElementsByClassName('linkedin');
@@ -37,7 +37,7 @@ assignIcons(SEARCH_ICONs, iconsSvg.searchIcon);
 // assignIcons(ABOUT_ICONS, navigationIcons.about);
 // assignIcons(CONTACT_ICONS, navigationIcons.contact);
 
-document.addEventListener("click", (event) => {
+document.addEventListener('click', () => {
   assignIcons(MENU_OPEN_ICONS, iconsSvg.menuOpen);
   assignIcons(MENU_CLOSE_ICONS, iconsSvg.menuClose);
   assignIcons(DARK_MODE_ICONS, iconsSvg.darkMode);
